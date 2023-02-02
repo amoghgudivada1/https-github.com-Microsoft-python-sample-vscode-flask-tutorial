@@ -36,3 +36,10 @@ jobs:
           echo test, and deploy your project.
           
           - script: python src/example.py
+          
+          - task: PythonScript@0
+  inputs:
+    scriptSource: 'inline'
+    script: |
+      print('Hello world 1')
+      print('Hello world 2')
